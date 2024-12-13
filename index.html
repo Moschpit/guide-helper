@@ -74,12 +74,12 @@
 <body>
     <header>
         <h1>Welcome to the Guide Helper</h1>
-        <h2>This is a simple website to demonstrate basic CXone Guide functionality.</h2>
-        <h3>A guide icon should appear at the bottom of the page on the right-hand side.</h3>
+        <h2>This is a simple website to demonstrate basic CXone Guide functionality</h2>
+        <h3>A guide icon should appear at the bottom of the page on the right-hand side</h3>
     </header>
     <main>
         <section>
-            <h2>Connected to </h2>
+            <h2>Connected to:</h2>
                 <ul>
                     <li>Business Unit: 4609403</li>
                     <li>Tenant ID: 5178</li>
@@ -91,20 +91,20 @@
             <h2>Script in &#60;head&#62; of this file</h2>
             <h3>Please see <a href="https://help.nice-incontact.com/content/acd/digital/guide/implementguidewebsite.htm?tocpath=Digital%20Experience%7CDigital%20Experience%20%7CCXone%20Guide%7C_____8">Embed Guide on Your Website</a> for additional information.</h3>
             <pre class="code-block">
-(function(n, u) {
-    window.CXoneDfo = n;
-    window[n] = window[n] || function() {
-        (window[n].q = window[n].q || []).push(arguments);
-    };
-    window[n].u = u;
-    const e = document.createElement("script");
-    e.type = "module";
-    e.src = u + "?" + Math.round(Date.now() / 1e3 / 3600);
-    document.head.appendChild(e);
-})('cxone', 'https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
-
-cxone('init', '5178');
-cxone('guide', 'init');
+                (function(n, u) {
+                    window.CXoneDfo = n;
+                    window[n] = window[n] || function() {
+                    (window[n].q = window[n].q || []).push(arguments);
+                    };
+                    window[n].u = u;
+                    const e = document.createElement("script");
+                    e.type = "module";
+                    e.src = u + "?" + Math.round(Date.now() / 1e3 / 3600);
+                    document.head.appendChild(e);
+                })('cxone', 'https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
+                
+                cxone('init', '5178');
+                cxone('guide', 'init');
             </pre>
         </section>
         <section>
