@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0078d7;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            padding: 1em;
+        }
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 1em;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1em;
+            margin: 2em 0;
+        }
+        .icon-grid img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .icon-grid .icon-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Your journey starts here.</p>
+    </header>
+    <main>
+        <h2>About This Page</h2>
+        <p>This is a simple HTML template you can use to kickstart your web project. Feel free to customize it to suit your needs.</p>
+        
+        <h2>Default Icons</h2>
+        <section class="icon-grid">
+            <!-- Each icon is dynamically loaded from the default-icons folder -->
+            <div class="icon-container">
+                <img src="default-icons/icon1.svg" alt="Icon 1">
+                <p>Icon 1</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/icon2.svg" alt="Icon 2">
+                <p>Icon 2</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/icon3.svg" alt="Icon 3">
+                <p>Icon 3</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/icon4.svg" alt="Icon 4">
+                <p>Icon 4</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/icon5.svg" alt="Icon 5">
+                <p>Icon 5</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/icon6.svg" alt="Icon 6">
+                <p>Icon 6</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
