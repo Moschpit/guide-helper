@@ -61,7 +61,93 @@
         <h2>A guide icon should appear at the bottom of the page on the right-hand side.</h2>
     </header>
     <main>
-        <!-- Main content sections remain unchanged -->
+        <section>
+            <h2>Connected to </h2>
+                <ul>
+                    <li>Business Unit: 4609403</li>
+                    <li>Tenant ID: 5178</li>
+                    <li>CXone Cluster: C205</li>
+                    <li>CXone Instance / Region: NA1</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Script in &#60;head&#62; of this file</h2>
+            <h3>Please see <a href="https://help.nice-incontact.com/content/acd/digital/guide/implementguidewebsite.htm?tocpath=Digital%20Experience%7CDigital%20Experience%20%7CCXone%20Guide%7C_____8">Embed Guide on Your Website</a> for additional information.</h3>
+            <pre class="code-block">
+(function(n, u) {
+    window.CXoneDfo = n;
+    window[n] = window[n] || function() {
+        (window[n].q = window[n].q || []).push(arguments);
+    };
+    window[n].u = u;
+    const e = document.createElement("script");
+    e.type = "module";
+    e.src = u + "?" + Math.round(Date.now() / 1e3 / 3600);
+    document.head.appendChild(e);
+})('cxone', 'https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
+
+cxone('init', '5178');
+cxone('guide', 'init');
+            </pre>
+        </section>
+        <section>
+            <ul>
+                <li>Engagement Rule = SM_Guide_Test_Rule</li>
+                    <ul>
+                      <li>Condition = "Current Page" contains "smartless"</li>
+                      <li>Action = "Set Guide Template" to "SMTEST_ChatOnly_Template"</li>
+                      <li>Action = "Set Guide Branding" to "SMTEST_Branding"</li>
+                    </ul>
+                <li>Guide Branding "SMTEST_Branding" is ugly by design
+                    <ul>
+                        <li>Theme Color #CC5500 </li>
+                        <li>Font Color #39FF14</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+        <h2>About This Page</h2>
+        <h3>This is a simple website to demonstrate basic CXone Guide functionality.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet semper nulla. Ut magna lectus, tincidunt ac nisl nec, commodo suscipit neque. Maecenas pretium faucibus mollis. Etiam quis consectetur lorem. Cras placerat interdum purus at ullamcorper. Proin non consequat purus. Proin libero enim, egestas ac velit sit amet, hendrerit sodales mauris. Maecenas eu vulputate nisi. Ut enim risus, efficitur vitae dolor sed, dignissim posuere urna.</p>
+        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean aliquet eget quam a placerat. Morbi et tristique nunc. Etiam at pulvinar justo. Morbi ipsum ante, volutpat rutrum congue vitae, pulvinar sit amet augue. Donec eleifend ipsum condimentum porttitor vehicula. Vivamus quam ante, ultricies non diam quis, tempus porta leo. Nulla eu venenatis lorem. Praesent ipsum diam, varius sed ornare eu, iaculis consectetur orci. Quisque id ex egestas nulla aliquet lobortis eu id neque. Maecenas posuere ullamcorper felis, eget ultricies turpis tempus finibus. Donec vitae leo at tortor lacinia fermentum suscipit maximus mauris. Nam pellentesque libero at malesuada elementum. Nam in venenatis lacus. Curabitur ac nisl et ipsum tempus lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section>
+            <h2>NICE Help Center References</h2>
+                <ul>
+                    <li><a href="https://help.nice-incontact.com/content/acd/digital/guide/customizeguideusingapi.htm?tocpath=Digital%20Experience%7CDigital%20Experience%20%7CCXone%20Guide%7CCustomize%20Guide%20Using%20APIs%7C_____0">Customize Guide Using APIs</a></li>
+                    <li><a href="https://help.nice-incontact.com/content/acd/digital/guide/configureguideinterface.htm?tocpath=Digital%20Experience%7CDigital%20Experience%20%7CCXone%20Guide%7C_____2#BestPractices">CXone Guide Best Practices</a></li>
+                    <li><a href="https://help.nice-incontact.com/content/acd/digital/guide/guiderules/rulebuilder.htm?tocpath=Digital%20Experience%7CDigital%20Experience%20%7CCXone%20Guide%7CCreate%20Engagement%20Rules%7CRule%20Builder%7C_____0#ExampleRules">Example Rules</a></li>
+                </ul> 
+        </section>
+        <h2>Image files for buttons, etc.</h2>
+        <h3>If customer would like to provide custom icon files, the should should be in .svg format and less than 50K in size</h3>
+        <section class="icon-grid">
+            <div class="icon-container">
+                <img src="default-icons/bell-icon.svg" alt="Bell Icon">
+                <p>Bell Icon</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/chat-icon.svg" alt="Chat Icon">
+                <p>Chat Icon</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/close-icon.svg" alt="Close Icon">
+                <p>Close Icon</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/email-icon.svg" alt="Email Icon">
+                <p>Email Icon</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/hide-icon.svg" alt="Hide Icon">
+                <p>Hide Icon</p>
+            </div>
+            <div class="icon-container">
+                <img src="default-icons/info-icon.svg" alt="Info Icon">
+                <p>Info Icon</p>
+            </div>
+        </section>    
     </main>
     <footer>
         <p>&copy; 2024 Chris Mosch. All rights reserved.</p>
