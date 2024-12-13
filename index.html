@@ -44,6 +44,15 @@
         .icon-grid .icon-container {
             text-align: center;
         }
+        .code-block {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1em;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 1em 0;
+        }
     </style>
     <script>
         (function(n, u) {
@@ -65,10 +74,30 @@
 <body>
     <header>
         <h1>Welcome to the Guide Helper</h1>
-        <p>A guide icon should appear at the bottom of the page on the right hand side</p>
+        <p>A guide icon should appear at the bottom of the page on the right-hand side.</p>
     </header>
     <main>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nulla facilisi. Suspendisse potenti. Mauris at quam magna. Integer nec nisi a nisi suscipit scelerisque et eget elit.</p>
+
+        <section>
+            <h2>Script in Header</h2>
+            <pre class="code-block">
+(function(n, u) {
+    window.CXoneDfo = n;
+    window[n] = window[n] || function() {
+        (window[n].q = window[n].q || []).push(arguments);
+    };
+    window[n].u = u;
+    const e = document.createElement("script");
+    e.type = "module";
+    e.src = u + "?" + Math.round(Date.now() / 1e3 / 3600);
+    document.head.appendChild(e);
+})('cxone', 'https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
+
+cxone('init', '5178');
+cxone('guide', 'init');
+            </pre>
+        </section>
 
         <h2>About This Page</h2>
         <p>This is a simple website to demonstrate basic CXone Guide functionality.</p>
@@ -106,4 +135,5 @@
     </footer>
 </body>
 </html>
+
 
