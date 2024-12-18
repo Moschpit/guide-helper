@@ -1,0 +1,11 @@
+cxone('guide', 'setCustomCss', '[data-selector="GUIDE_CHANNEL_BUTTON"] div img {border-radius: 0 !important;} [data-selector="GUIDE_CHANNEL_BUTTON"]:active {outline-style: none !important} [data-selector="GUIDE_CHANNEL_BUTTON"] > div:active {background-color: #74AA50 !important;} .entrypoint > button:active {background-color: #74AA50 !important} [data-selector="GUIDE_CHANNEL_CLOSE_BUTTON"] {background-color: #a6e191 !important;} [data-selector="GUIDE_CHANNEL_CLOSE_BUTTON"]:active {background-color: #74AA50 !important; outline-style: none !important}  @("@")font-face {font-family: Mulish; src: url(https://www.trupanion.com/ResourcePackages/Ecomm/assets/dist/fonts/Mulish/Mulish.ttf); }[data-selector="OFFER_HEADER"] {font-family: "Mulish" !important;} [data-selector="OFFER_BODY"] {font-family: "Mulish" !important;} .offerIcon {height: 50px !important; width: 50px !important; box-shadow: none !important;} .action {border-radius: 20px !important; font-family: "Mulish" !important;} .header {min-height: 2.5em !important;}[data-selector="OFFER_CLOSE_BUTTON"] {width: 2em !important; height: 2em !important;} #cxone-guide-container .full-screen.pcontainer {width: 280px !important;top: initial !important;left: initial !important;right: var(--popup-offset-x) !important;height: 420px !important;max-height: 420px !important;}#be-frame.be-frame-fullscreen {width: 280px !important;height: 430px; !important;left: initial !important;} .offerContainer .buttons button {height: auto !important;}');
+
+
+[data-selector="GUIDE_CHANNEL_BUTTON"] div img {border-radius: 0 !important;} 
+[data-selector="GUIDE_CHANNEL_BUTTON"]:active {outline-style: none !important}
+
+cxone('chat', 'setCustomCss' '')
+
+cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}; [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important}; [data-selector="HEADER"] {color: #FFFFFF; background: #008DB3};');
+
+cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}; [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important};');
