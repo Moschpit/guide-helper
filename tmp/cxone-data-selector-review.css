@@ -9,3 +9,16 @@ cxone('chat', 'setCustomCss' '')
 cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}; [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important}; [data-selector="HEADER"] {color: #FFFFFF; background: #008DB3};');
 
 cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}; [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important};');
+
+
+cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: purple !important; background: red !important};');
+
+cxone('chat','setCustomCss', '[data-selector="AGENT_MESSAGE_BUBBLE"] {color: purple !important; background: red !important};');
+
+
+cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important};');
+
+
+*{
+    font-family: ;
+}

@@ -24,14 +24,14 @@
         cxone('init', '5178');
         cxone('guide', 'init');
         cxone('guide','hidePreSurvey', 'FutureCustomer');
-        cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: white !important; background: #black !important}; [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #white !important; background: #black !important};');
+        cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}  [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important};');
 </script>
 </head>
 <body>
     <header>
         <h1>Single Channel Chat with No Precontact Survey</h1>
         <h2>A single icon to present chat with auto launch on click</h2>
-        <h3>Condition = "Current Page" contains "no-precontact-survey"</h3>
+        <h3>Condition = "Current Page" contains "chat-bubbles"</h3>
         <h3>Action = "Set Guide Template" to "SMTEST_ChatOnly_Template"</h3>
         <h3>Action = "Set Guide Branding" to "SMTEST_Blue"</h3>
     </header>
