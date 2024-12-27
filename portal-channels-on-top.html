@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>After Hours Treatment</title>
+    <title>Company Portal - Channel Icons On Top</title>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="https://www.nice.com/favicon.ico" sizes="any"/>
     <!-- Link to external CSS file -->
@@ -23,15 +23,18 @@
         })('cxone', 'https://web-modules-de-na1.niceincontact.com/loader/1/loader.js');
         cxone('init', '5178');
         cxone('guide', 'init');
+        cxone('guide','hidePreSurvey', 'FutureCustomer');
         cxone('guide', 'setButtonSize', '48px');
         cxone('guide', 'setOffsetX', '48px');
+        cxone('guide','setCustomCss', '[data-selector="OFFER_BUTTON_1"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important;} [data-selector="OFFER_BUTTON_2"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important} [data-selector="OFFER_BUTTON_3"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important};');
+        cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}  [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important};');
 </script>
 </head>
 <body>
     <header>
-        <h1>After Hours Treatment</h1>
-        <h2>Show more than one</h2>
-        <h3>Condition = "Current Page" contains "time-of-day-after-hours-portal"</h3>
+        <h1>Company Portal - Channel Icons On Top</h1>
+        <h2>Guide Rule = SMTEST_Portal_Rule</h2>
+        <h3>Condition = "Current Page" contains "portal-channels-on-top"</h3>
         <h3>Action = "Set Guide Template" to "SMTEST_CompanyPortal_Template"</h3>
     </header>
     <main>
@@ -42,12 +45,6 @@
                 <li>Tenant ID: 5178</li>
                 <li>CXone Cluster: C205</li>
                 <li>CXone Instance / Region: NA1</li>
-                <li><strong>Guide Branding "SMTEST_Branding" is ugly by design</strong></li>
-                    <ul>
-                        <li>Theme Color #CC5500 </li>
-                        <li>Font Color #39FF14</li>
-                    </ul>
-                </li>
             </ul>
         </section>
         <section>
