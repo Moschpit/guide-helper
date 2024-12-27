@@ -24,7 +24,10 @@
         cxone('init', '5178');
         cxone('guide', 'init');
         cxone('guide','hidePreSurvey', 'FutureCustomer');
+        cxone('guide', 'setButtonSize', '48px');
+        cxone('guide', 'setOffsetX', '48px');
         cxone('guide','setCustomCss', '[data-selector="OFFER_BUTTON_1"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important;} [data-selector="OFFER_BUTTON_2"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important} [data-selector="OFFER_BUTTON_3"] {color: #FFFFFF !important; background: #008DB3 !important; border-radius: 12px !important};');
+        cxone('chat','setCustomCss', '[data-selector="CUSTOMER_MESSAGE_BUBBLE"] {color: #000000 !important; background: #EAEAEA !important}  [data-selector="AGENT_MESSAGE_BUBBLE"] {color: #000000 !important; background: #008DB3 !important};');
 </script>
 </head>
 <body>
@@ -33,7 +36,7 @@
         <h2>Show more than one</h2>
         <h3>Condition = "Current Page" contains "offer-rage-clicking"</h3>
         <h3>Action = "Set Guide Template" to "SMTEST_ChatOnly_Template"</h3>
-        <h3>Action = "Set Guide Branding" to "SMTEST_Branding"</h3>
+        <h3>Action = "Set Guide Branding" to "SMTEST_Blue"</h3>
     </header>
     <main>
         <section>
@@ -43,12 +46,6 @@
                 <li>Tenant ID: 5178</li>
                 <li>CXone Cluster: C205</li>
                 <li>CXone Instance / Region: NA1</li>
-                <li><strong>Guide Branding "SMTEST_Branding" is ugly by design</strong></li>
-                    <ul>
-                        <li>Theme Color #CC5500 </li>
-                        <li>Font Color #39FF14</li>
-                    </ul>
-                </li>
             </ul>
         </section>
         <section>
