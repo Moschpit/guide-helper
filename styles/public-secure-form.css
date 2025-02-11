@@ -15,7 +15,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: -50%;
+  top: -10%;
   left: -50%;
   width: 200%;
   height: 200%;
