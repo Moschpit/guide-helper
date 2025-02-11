@@ -20,7 +20,8 @@ body::before {
   width: 200%;
   height: 200%;
   background: url("https://moschpit.github.io/guide-helper/styles/brain_dog_icon.svg") no-repeat center center;
-  background-size: cover;
+  background-size: 15%;
+  background-repeat: no-repeat;
   transform: rotate(45deg);
   opacity: 0.5;
   z-index: -1; /* Ensure this is behind all content */
